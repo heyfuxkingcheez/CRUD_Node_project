@@ -22,7 +22,6 @@ router.get("/product/:id", async (req, res) => {
             title: productsOne.title,
             content: productsOne.content,
             author: productsOne.author,
-            pwd: productsOne.pwd,
             status: productsOne.status,
             createdAt: productsOne.createdAt,
         };
