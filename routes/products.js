@@ -32,10 +32,10 @@ router.get("/product/:id", async (req, res) => {
 });
 
 // 상품 등록 API
-router.post("/products", (req, res) => {
+router.post("/products", async (req, res) => {
     const { title, content, author, pwd } = req.body;
     try {
-        Products.create({
+        await Products.create({
             title,
             content,
             author,
@@ -98,7 +98,6 @@ router.delete("/product/:id", async (req, res) => {
             res.status(200).send({ message: "상품을 삭제하였습니다." });
         }
     } catch (error) {
-        console.log(error);
         return res
             .status(404)
             .send({ errorMessage: "상품 조회에 실패하였습니다." });

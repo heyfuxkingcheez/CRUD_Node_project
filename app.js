@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api", [productsRouter]);
 
 // 서버 연결
-const port = 8080;
+const port = 3001;
 app.listen(port, () => {
     console.log("server on", port);
 });
