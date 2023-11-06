@@ -42,70 +42,7 @@
 <br />
 
 ## API
-기능,API URL,Method,request,response,Response(error)
-상품 등록,/api/products,POST,"{
-  ""title"":""title"",
-  ""content"": ""content."",
-  ""author"":”author"",
-  ""password"":""1234""
-}","{
-  ""message"": ""판매 상품을 등록하였습니다.""
-}","# 400 body를 입력받지 못한 경우
-{ errorMessage: '데이터 형식이 올바르지 않습니다.' }"
-상품 목록 조회,/api/products,GET,{  },"{
-  ""data"": [
-    {
-      ""_id"": ""652b6606234d72a8d2555e29"",
-      ""title"": ""title"",
-      ""author"": ""author"",
-      ""status"": ""FOR_SALE"",
-      ""createdAt"": ""2023-10-15T04:09:42.059Z""
-    },
-    {
-      ""_id"": ""652b619597690183899d2f74"",
-      ""title"": ""title"",
-      ""author"": ""author"",
-      ""status"": ""SOLD_OUT"",
-      ""createdAt"": ""2023-10-15T03:50:45.866Z""
-    }
-  ]
-}",
-상품 상세 조회,/api/product/:_id,GET,{  },"{
-  ""data"": {
-    ""_id"": ""652b619597690183899d2f74"",
-    ""title"": ""title"",
-    ""content"": ""content."",
-    ""author"": ""author"",
-    ""status"": ""FOR_SALE"",
-    ""createdAt"": ""2023-10-15T03:50:45.866Z""
-  }
-}","# 400 params를 입력받지 못한 경우
-{ message: '데이터 형식이 올바르지 않습니다.' }
-# 404 productId에 해당하는 상품이 존재하지 않을 경우
-{ message: 상품 조회에 실패하였습니다. }"
-상품 정보 수정,/api/product/:_id,PUT,"{
-  ""title"":""title 수정됨"",
-  ""content"": ""content."",
-  ""password"":""1234"",
-  ""status"":""SOLD_OUT""
-}","{
-  ""message"": ""상품 정보를 수정하였습니다.""
-}","# 400 body 또는 params를 입력받지 못한 경우
-{ message: '데이터 형식이 올바르지 않습니다.' }
-# 404 productId에 해당하는 상품이 존재하지 않을 경우
-{ message: 상품 조회에 실패하였습니다. }
-# 401 상품의 비밀번호가 일치하지 않을 경우
-{ message: 상품을 수정할 권한이 존재하지 않습니다. }"
-상품 삭제,/api/product/:_id,DELETE,"{  
-  ""password"": ""1234""
-}","{
-  ""message"": ""상품을 삭제하였습니다.""
-}","# 400 body 또는 params를 입력받지 못한 경우
-{ message: '데이터 형식이 올바르지 않습니다.' }
-# 404 productId에 해당하는 상품이 존재하지 않을 경우
-{ message: 상품 조회에 실패하였습니다. }
-# 401 상품의 비밀번호가 일치하지 않을 경우
-{ message: 상품을 삭제할 권한이 존재하지 않습니다. }"
+![image](https://github.com/heyfuxkingcheez/CRUD_Node_project/assets/143869354/dfaa1323-7fce-408f-a661-a7f7bb54e4d2)
 
 
 <br />
