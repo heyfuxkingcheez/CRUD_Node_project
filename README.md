@@ -41,6 +41,12 @@
 
 <br />
 
+## API
+[https://www.notion.so/e32f816cb2d14633a0a31d2a88cd7119?v=e7405da8defc4d7ab394e2f13a123738&pvs=4](https://www.notion.so/e32f816cb2d14633a0a31d2a88cd7119?v=e7405da8defc4d7ab394e2f13a123738&pvs=4)
+
+
+<br />
+
 ## 🙋‍♀️ To Do List
 
 ### 1. Directory setting
